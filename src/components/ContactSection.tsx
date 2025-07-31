@@ -1,14 +1,14 @@
-import { Mail, Github, Linkedin, MapPin, Phone } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Mail, Github, Linkedin, MapPin, Phone } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission - can integrate with Formspree or similar service
-    console.log('Form submitted');
+    console.log("Form submitted");
   };
 
   return (
@@ -19,8 +19,9 @@ const ContactSection = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm always interested in discussing new opportunities, innovative projects, 
-            or just having a conversation about technology and engineering.
+            I'm always interested in discussing new opportunities, innovative
+            projects, or just having a conversation about technology and
+            engineering.
           </p>
         </div>
 
@@ -35,11 +36,11 @@ const ContactSection = () => {
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a 
-                    href="mailto:trinath.anantham@gmail.com" 
+                  <a
+                    href="mailto:trinath.anantham@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
-                    trinath.anantham@gmail.com
+                    nvskumar.anantam@gmail.com
                   </a>
                 </div>
               </div>
@@ -48,8 +49,8 @@ const ContactSection = () => {
                 <Phone className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a 
-                    href="tel:+919542092091" 
+                  <a
+                    href="tel:+919542092091"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     +91 954 209 2091
@@ -61,32 +62,34 @@ const ContactSection = () => {
                 <MapPin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">KPHB, Hyderabad, India</p>
+                  <p className="text-muted-foreground">
+                    KPHB, Hyderabad, India
+                  </p>
                 </div>
               </div>
 
               <div className="pt-6">
                 <p className="font-medium mb-4">Follow Me</p>
                 <div className="flex space-x-4">
-                  <a 
-                    href="https://github.com/trinathanantham" 
-                    target="_blank" 
+                  <a
+                    href="https://github.com/trinathanantham"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     <Github size={24} />
                   </a>
-                  <a 
-                    href="https://www.linkedin.com/in/trinath-anantham-045a19112/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/trinath-anantham-045a19112/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     <Linkedin size={24} />
                   </a>
-                  <a 
-                    href="https://trinath.tech" 
-                    target="_blank" 
+                  <a
+                    href="https://trinath.tech"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
@@ -106,28 +109,14 @@ const ContactSection = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Input 
-                      placeholder="Your Name" 
-                      required 
-                    />
+                    <Input placeholder="Your Name" required />
                   </div>
                   <div>
-                    <Input 
-                      type="email" 
-                      placeholder="Your Email" 
-                      required 
-                    />
+                    <Input type="email" placeholder="Your Email" required />
                   </div>
                 </div>
-                <Input 
-                  placeholder="Subject" 
-                  required 
-                />
-                <Textarea 
-                  placeholder="Your Message" 
-                  rows={5} 
-                  required 
-                />
+                <Input placeholder="Subject" required />
+                <Textarea placeholder="Your Message" rows={5} required />
                 <Button type="submit" className="w-full">
                   Send Message
                 </Button>
