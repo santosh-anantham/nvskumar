@@ -2,7 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # or your default branch
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -10,6 +13,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Print repo root contents (debug)
+        run: |
+          echo "=== ls -R (top level) ==="
+          ls -al
+          echo "=== node/version ==="
+          node --version || echo "node not installed"
+          echo "=== npm version ==="
+          npm --version
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -20,8 +32,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Show build script and package.json snippet (debug)
+        run: |
+          echo "--- package.json scripts ---"
+          jq '.scripts' package.json || cat package.json | head -n 60
+
       - name: Build
         run: npm run build
+
+      - name: Inspect dist folder (debug)
+        run: |
+          echo "=== dist contents ==="
+          ls -R dist | head -100
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
