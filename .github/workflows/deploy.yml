@@ -1,16 +1,17 @@
-name: Deploy Vite to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # or whatever your primary branch is
+    branches: [main] # or your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -27,5 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # custom domain file is kept if committed; otherwise you can set it here:
-          # cname: www.nvskumar.com
+          cname: www.nvskumar.com
