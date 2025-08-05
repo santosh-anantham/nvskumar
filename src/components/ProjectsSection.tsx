@@ -5,67 +5,17 @@ const ProjectsSection = () => {
     {
       title: "OneCompiler",
       description:
-        "Founded and architected an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Scaled to serve 2 million+ users globally with high availability and performance.",
-      techStack: [
-        "React",
-        "Next.js",
-        "React Native",
-        "Node.js",
-        "MongoDB",
-        "Docker",
-        "AWS",
-        "Linux",
-      ],
+        "I have 3+ years of experience developing and maintaining an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Contributed to scaling the platform to serve millions of users globally with high availability and performance.",
+      techStack: ["React", "Next.js", "React Native", "Node.js", "MongoDB"],
       githubUrl: "https://github.com/onecompiler",
       demoUrl: "https://onecompiler.com",
     },
     {
-      title: "SaasLabs Engineering Platform",
+      title: "Rtzen",
       description:
-        "Led engineering teams owning Billing, Balance, and Subscriber services built with NestJS, Node.js, and MySQL. Managed 10+ engineers and oversaw full-stack delivery with React and Remix.",
-      techStack: [
-        "NestJS",
-        "Node.js",
-        "MySQL",
-        "React",
-        "Remix",
-        "GCP",
-        "Kubernetes",
-        "Docker",
-      ],
-      githubUrl: "https://github.com/saaslabs",
-      demoUrl: "https://saaslabs.co",
-    },
-    {
-      title: "Reputation.com Microservices",
-      description:
-        "Developed scalable microservices using Java, Spring Boot, and MongoDB for third-party API integrations. Built admin tools using React and managed log aggregation with ELK Stack on AWS and GCP.",
-      techStack: [
-        "Java",
-        "Spring Boot",
-        "MongoDB",
-        "React",
-        "ELK Stack",
-        "AWS",
-        "GCP",
-      ],
-      githubUrl: "https://github.com/reputation-com",
-      demoUrl: "https://reputation.com/",
-    },
-    {
-      title: "SplashBI Reporting Platform",
-      description:
-        "Built enterprise reporting UI using React and Kendo UI components. Developed and maintained backend services with Java, Spring Boot, Hibernate, and Oracle DB with OAF framework.",
-      techStack: [
-        "React",
-        "Kendo UI",
-        "Java",
-        "Spring Boot",
-        "Hibernate",
-        "Oracle DB",
-        "OAF",
-      ],
-      demoUrl: "https://splashbi.com/",
+        "Developed and maintained a fintech platform providing innovative financial solutions and services. Built scalable backend services and intuitive user interfaces for seamless financial transactions and management.",
+      techStack: ["React", "Node.js", "TypeScript", "Redux", "PostgreSQL"],
+      demoUrl: "https://rtzen.com",
     },
   ];
 
