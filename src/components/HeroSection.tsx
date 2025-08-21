@@ -45,7 +45,7 @@ const HeroSection = () => {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a
-                href="/Trinath.pdf"
+                href="/NVS Kumar.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
