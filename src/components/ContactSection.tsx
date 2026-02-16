@@ -50,10 +50,10 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a
-                    href="tel:+919542092091"
+                    href="tel:+7013371082"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
-                    +91 954 209 2091
+                    +91 7013371082
                   </a>
                 </div>
               </div>
@@ -68,11 +68,11 @@ const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="pt-6">
+              {/* <div className="pt-6">
                 <p className="font-medium mb-4">Follow Me</p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/trinathanantham"
+                    href="www.linkedin.com/in/anantam-n-v-s-kumar-958798148"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
@@ -96,7 +96,7 @@ const ContactSection = () => {
                     🌐
                   </a>
                 </div>
-              </div>
+              </div> */}
             </CardContent>
           </Card>
 

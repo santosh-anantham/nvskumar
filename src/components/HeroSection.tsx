@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center hero-gradient">
-      <div className="container mx-auto px-6 py-20">
+      <div className="container mx-auto px-6 pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 flex flex-col items-center">
             <div className="relative mb-8">
@@ -55,30 +55,7 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://github.com/trinathanantham"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-smooth"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/trinath-anantham-045a19112/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-smooth"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="mailto:trinath.anantham@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-smooth"
-            >
-              <Mail size={24} />
-            </a>
-          </div>
+          
         </div>
       </div>
     </section>

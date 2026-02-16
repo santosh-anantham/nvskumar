@@ -5,7 +5,7 @@ const ProjectsSection = () => {
     {
       title: "OneCompiler",
       description:
-        "I have 3+ years of experience developing and maintaining an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Contributed to scaling the platform to serve millions of users globally with high availability and performance.",
+        "I have 5+ years of experience developing and maintaining an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Contributed to scaling the platform to serve millions of users globally with high availability and performance.",
       techStack: ["React", "Next.js", "React Native", "Node.js", "MongoDB"],
       githubUrl: "https://github.com/onecompiler",
       demoUrl: "https://onecompiler.com",

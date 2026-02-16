@@ -51,7 +51,7 @@ const TechStackSection = () => {
             Technical Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            3+ years of experience across frontend, backend. Specialized in
+            5+ years of experience across frontend, backend. Specialized in
             building scalable systems and leading full-stack engineering teams.
           </p>
         </div>
